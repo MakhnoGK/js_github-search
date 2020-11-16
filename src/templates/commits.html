@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-content">
+    <table class="table is-fullwidth commits-table">
+      <thead>
+        <tr>
+          <th>Committer</th>
+          <th>Message</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#commits}}
+        <tr>
+          <td>{{commit.committer.name}}</td>
+          <td>{{commit.message}}</td>
+          <td>{{commit.committer.date}}</td>
+        </tr>
+        {{/commits}}
+      </tbody>
+    </table>
+  </div>
+</div>

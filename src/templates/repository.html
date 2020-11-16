@@ -1,0 +1,28 @@
+{{#repositories}}
+<div class="columns">
+      <div class="column is-two-fifths">
+        <article class="message">
+          <div class="message-header">
+            <p>{{name}}</p>
+          </div>
+
+          <div class="message-body">
+            <p>
+              {{^description}}
+              No description...
+              {{/description}}
+              {{description}}
+            </p>
+            <p>
+              <a href="https://github.com/{{full_name}}" class="has-text-link" target="_blank">View on Github</a>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="column is-size-7">
+        <div id="commits-errors"></div>
+        <div data-repo="{{name}}"></div>
+      </div>
+    </div>
+{{/repositories}}

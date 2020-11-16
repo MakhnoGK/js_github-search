@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Workflow</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="section" id="search">
+        <h1 class="title">Explore Github repositories</h1>
+        <form id="search-form">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input
+                type="text"
+                name="username"
+                value="MakhnoGK"
+                class="input"
+                placeholder="Enter Github username"
+                required="true"
+              />
+            </div>
+            <div class="control">
+              <button type="submit" class="button is-info">Search</button>
+            </div>
+          </div>
+
+          <div id="search-errors"></div>
+        </form>
+      </section>
+
+      <section class="section" id="main">
+        <div class="columns">
+          <!-- User column -->
+          <div class="column is-one-third">
+            <div id="user-info">
+              <!-- template start -->
+
+              <!-- template end -->
+            </div>
+          </div>
+
+          <!-- Repositories column -->
+          <div class="column">
+            <div id="repositories"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

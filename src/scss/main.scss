@@ -1,0 +1,12 @@
+@import 'overrides';
+@import 'bulma';
+
+.commits-table tbody tr {
+  td:first-child {
+    width: 25%;
+  }
+
+  td:last-child {
+    width: 25%;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="{{user.avatar_url}}" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{user.name}}</p>
+        <p class="subtitle is-6">
+          <a href="https://github.com/{{user.login}}" target="_blank">{{user.login}}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="card-footer is-size-7">
+    <p class="card-footer-item">{{user.followers}} followers</p>
+    <p class="card-footer-item">{{user.following}} following</p>
+    <p class="card-footer-item">{{user.public_repos}} repositories</p>
+  </footer>
+</div>
